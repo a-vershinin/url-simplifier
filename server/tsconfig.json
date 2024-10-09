@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "es2018",
-    "lib": ["es6"],
     "allowJs": false,
     "module": "commonjs",
     "moduleResolution": "node",
@@ -13,6 +12,8 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "noImplicitAny": true,
+    "declaration": true,
+    "typeRoots": ["./node_modules/@types"],
     "types": ["node"]
   },
   "include": ["src/**/*.ts"],

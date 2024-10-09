@@ -31,11 +31,6 @@ export const createShortUrlHandler = (
     try {
       const { originalUrl } = req.body;
 
-      await new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(void 0);
-        }, 1500);
-      });
       const bodyValues = req.body.originalUrl;
       const errorBodyParsed = createUrlSchema.safeParse({
         originalUrl,
