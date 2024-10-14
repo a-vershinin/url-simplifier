@@ -7,7 +7,7 @@ import { appConfig } from "../configs";
 // Connect to MongoDB
 export const initDatabase = async () => {
   try {
-    const dbMongoUrl = `${appConfig.db.host}/${appConfig.db.dbName}`;
+    const dbMongoUrl = `${appConfig.db.host}/${appConfig.db.dbName}?${appConfig.db.dbOptions}`;
 
     await mongoose.connect(dbMongoUrl);
 
